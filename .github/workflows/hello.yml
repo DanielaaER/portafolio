@@ -1,0 +1,18 @@
+name: Mi primer workflow
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir mensaje
+        run: echo "Hola, GitHub Actions está vivo! 🚀"
+    
+      - name: Crear archivo con la version de node, npm y yarn
+        run: |
+          node -v > versiones.txt
+          npm -v >> versiones.txt
+          yarn -v >> versiones.txt
+
+          cat versiones.txt
