@@ -2,7 +2,7 @@ name: Responder a Issues ✨
 on:
   issues:
     types: [opened]
-   workflow_dispatch:
+  workflow_dispatch:
 permissions:
   issues: write
   contents: read
