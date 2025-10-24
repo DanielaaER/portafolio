@@ -2,6 +2,8 @@ name: Responder a Issues
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
+  
 jobs:
   respond:
     runs-on: ubuntu-latest
