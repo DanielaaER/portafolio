@@ -2,6 +2,9 @@ name: Responder a Issues ✨
 on:
   issues:
     types: [opened]
+permissions:
+  issues: write
+  contents: read
 jobs:
   respond:
     runs-on: ubuntu-latest
