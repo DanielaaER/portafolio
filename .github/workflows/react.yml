@@ -2,9 +2,9 @@ name: Build automático
 
 on:
   push:
-    branches: [develop, master]
+    branches: [develop, master, feat/*]
   pull_request:
-    branches: [ develop, master ]
+    branches: [ develop, master, feat/* ]
 
 jobs:
   build:
@@ -16,3 +16,16 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
+
+  compilar:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🔧 Compilando app..."
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🧪 Ejecutando pruebas..."
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🚀 Deploy listo!"
