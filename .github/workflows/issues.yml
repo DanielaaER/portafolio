@@ -1,11 +1,11 @@
-name: Responder_a_Issues
+name: Responder a Issues
 on:
   issues:
     types: [opened]
+  workflow_dispatch:
 permissions:
   issues: write
   contents: read
-  
 jobs:
   respond:
     runs-on: ubuntu-latest
