@@ -1,4 +1,4 @@
-![CI](https://github.com/DanielaaER/portafolio/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/DanielaaER/portafolio/actions/workflows/hello.yml/badge.svg)
 
 
 
